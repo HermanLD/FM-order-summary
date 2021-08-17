@@ -1,0 +1,157 @@
+:root {
+  /* COLOR */
+  --clr-primary-1: hsl(225, 100%, 94%);
+  --clr-primary-2: hsl(245, 75%, 52%);
+  --clr-primary-25: hsl(245, 83%, 68%);
+
+  --clr-neutral-1: hsl(225, 100%, 98%);
+  --clr-neutral-2: hsl(224, 23%, 55%);
+  --clr-neutral-3: hsl(223, 47%, 23%);
+
+  /* TYPOGRAPHY */
+  --base-font-size: 62.5%;
+  --ff-body: "Red Hat Display", sans-serif;
+
+  --fw-reg: 500;
+  --fw-med: 700;
+  --fw-bold: 900;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  padding: 7.2rem 2.4rem;
+  background-color: var(--clr-primary-1);
+  font-size: 1.6rem;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-reg);
+}
+
+h1,
+h2 {
+  font: inherit;
+  margin: 0;
+}
+
+.order-summary {
+  /*? BOX SHADOW PROPS */
+  --offset-x: 0;
+  --offset-y: 25px;
+  --blur-radius: 45px;
+  --spread-radius: -55px;
+  --color: var(--clr-primary-25);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--spread-radius) var(--color);
+
+  max-width: 45rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.order-summary a,
+.order-summary a:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.order-summary > .content {
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  padding-bottom: 3.6rem;
+}
+
+.order-summary > .content p {
+  line-height: 1.7;
+}
+
+.order-summary-img {
+  display: inline-block;
+  width: 100%;
+}
+
+.order-summary-header {
+  margin-top: 3.8rem;
+  margin-bottom: 2.8rem;
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+}
+
+.order-summary-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  font-size: 1.2rem;
+}
+
+.order-summary-plan > .price > .icon-image {
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: 2rem;
+}
+
+.order-summary-plan > .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-summary-plan > .price * {
+  margin: 0;
+}
+
+.order-summary-plan > .price p:first-of-type {
+  font-weight: var(--fw-med);
+}
+
+.order-summary-plan a {
+  color: var(--clr-primary-25);
+  font-weight: var(--fw-med);
+  text-decoration: underline;
+}
+
+.order-summary .proceed {
+  /*? BOX SHADOW PROPS */
+  --offset-x: 0;
+  --offset-y: 20px;
+  --blur-radius: 35px;
+  --spread-radius: -18px;
+  --color: var(--clr-primary-25);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--spread-radius) var(--color);
+
+  border-radius: 15px;
+  background-color: var(--clr-primary-2);
+  color: var(--clr-neutral-1);
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.order-summary .proceed:focus,
+.order-summary .proceed:hover {
+  background-color: var(--clr-primary-25);
+}
+
+.order-summary .cancel {
+  color: var(--clr-neutral-2);
+}
+
+.order-summary .cancel:focus,
+.order-summary .cancel:hover {
+  color: var(--clr-neutral-3);
+}
+
+@media (min-width: 750px) {
+  :root {
+    --base-font-size: 125%;
+  }
+}

@@ -25,7 +25,8 @@ body {
   padding: 7.2rem 2.4rem;
   background-color: var(--clr-primary-1);
   background-image: url("../images/pattern-background-mobile.svg");
-  background-position: center;
+  background-position: top;
+  background-size: contain;
   background-repeat: no-repeat;
   font-size: 1.6rem;
   font-family: var(--ff-body);

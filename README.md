@@ -1,8 +1,8 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor
 
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Order summary card</h1>
+<h1 align="center">Order Summary Card</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://www.frontendmentor.io" target="_blank">FrontendMentor.io</a>.
@@ -38,13 +38,10 @@
 
 ## Overview
 
-![screenshot](./images)
+![screenshot](https://res.cloudinary.com/dz209s6jk/image/upload/v1628187714/Challenges/ztdrvzpbcjytdo892pxx.jpg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- Practiced using CSS custom properties
+- Mobile first workflow
 
 ### Built With
 
